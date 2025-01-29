@@ -45,4 +45,4 @@ export async function getServerSideProps({ params }: { params: any }) {
 //   return { props: { product: response.data } };
 // }
 
-// export default DetailProduct;
+export default DetailProduct;
