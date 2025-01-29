@@ -58,7 +58,8 @@ const AuthOptions: NextAuthOptions = {
           type: "google",
         };
 
-        signInWithGoogle(data).then((result: any) => {
+        const config = { someKey: "someValue" }; // Example config
+        signInWithGoogle(data, config).then((result: any) => {
           if (result.status) {
             token.email = result.data.email;
             token.name = result.data.fullname;
