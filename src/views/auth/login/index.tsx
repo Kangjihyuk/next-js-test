@@ -3,7 +3,7 @@ import styles from "./login.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { signIn } from "next-auth/react";
-const loginView = () => {
+const LoginView = () => {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const [error, setError] = useState("");
@@ -97,4 +97,4 @@ const loginView = () => {
   );
 };
 
-export default loginView;
+export default LoginView;
