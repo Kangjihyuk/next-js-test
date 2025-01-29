@@ -91,7 +91,8 @@ const LoginView = () => {
         </button>
       </div>
       <p className={styles.login__link}>
-        Don't Have an account? Sign up <Link href="/auth/register">here</Link>
+        Don{"'"}t Have an account? Sign up{" "}
+        <Link href="/auth/register">here</Link>
       </p>
     </div>
   );

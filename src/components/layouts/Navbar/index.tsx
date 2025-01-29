@@ -12,7 +12,7 @@ const Navbar = () => {
         {data?.user?.image ? (
           <Image
             src={data.user.image}
-            alt={data?.user?.name}
+            alt={data?.user?.name || ""}
             width={30}
             height={30}
             className={styles.avatar}
